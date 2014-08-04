@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckPDF", "CheckPDFTitle\CheckPDF.csproj", "{38760891-8491-4BFB-A182-A90157374F7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationTestIFilter", "ConsoleApplicationTestIFilter\ConsoleApplicationTestIFilter.csproj", "{8222A195-3B9A-43CD-BE3B-AA3111BFED73}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,10 +13,6 @@ Global
 		{38760891-8491-4BFB-A182-A90157374F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38760891-8491-4BFB-A182-A90157374F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38760891-8491-4BFB-A182-A90157374F7D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8222A195-3B9A-43CD-BE3B-AA3111BFED73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8222A195-3B9A-43CD-BE3B-AA3111BFED73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8222A195-3B9A-43CD-BE3B-AA3111BFED73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8222A195-3B9A-43CD-BE3B-AA3111BFED73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
