@@ -26,12 +26,12 @@ namespace CheckPDFTitle.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("_")]
-        public char SeparatedCaracter {
+        public char Separatedcharacter {
             get {
-                return ((char)(this["SeparatedCaracter"]));
+                return ((char)(this["Separatedcharacter"]));
             }
             set {
-                this["SeparatedCaracter"] = value;
+                this["Separatedcharacter"] = value;
             }
         }
         

@@ -18,7 +18,7 @@ namespace CheckPDFTitle
     }
 
     TimeSpan _tempsPasse;
-    private string _separatedCaracter = "-";
+    private string _separatedcharacter = "-";
 
     private void FormMain_Load(object sender, EventArgs e)
     {
@@ -38,16 +38,16 @@ namespace CheckPDFTitle
       Height = Settings.Default.WindowHeight;
       Top = Settings.Default.WindowTop < 0 ? 0 : Settings.Default.WindowTop;
       Left = Settings.Default.WindowLeft < 0 ? 0 : Settings.Default.WindowLeft;
-      textBoxSeparatedCaracter.Text = Settings.Default.SeparatedCaracter.ToString(CultureInfo.InvariantCulture);
+      textBoxSeparatedcharacter.Text = Settings.Default.Separatedcharacter.ToString(CultureInfo.InvariantCulture);
       checkBoxIncludeSubDirectories.Checked = Settings.Default.IncludeSubDirectories;
       textBoxPDFPath.Text = Settings.Default.PdfPath;
     }
 
     private void buttonCheckPdf_Click(object sender, EventArgs e)
     {
-      if (textBoxSeparatedCaracter.Text.Length != 1)
+      if (textBoxSeparatedcharacter.Text.Length != 1)
       {
-        MessageBox.Show("Separated caracter must be only one caracter long.");
+        MessageBox.Show("Separated character must be only one character long.");
         return;
       }
 
@@ -57,7 +57,7 @@ namespace CheckPDFTitle
         return;
       }
 
-      _separatedCaracter = textBoxSeparatedCaracter.Text;
+      _separatedcharacter = textBoxSeparatedcharacter.Text;
       progressBar1.Visible = true;
       timer1.Enabled = true;
       DateTime start = DateTime.Now;
@@ -83,7 +83,7 @@ namespace CheckPDFTitle
       progressBar1.Value = progressBar1.Minimum;
       foreach (string fichier in listBoxListOfFiles.Items)
       {
-        string[] tableauMots = fichier.Split(_separatedCaracter[0]);
+        string[] tableauMots = fichier.Split(_separatedcharacter[0]);
         string numeroRecherche = tableauMots[0];
 
         // searching the first word inside the PDF file itself
@@ -243,7 +243,7 @@ namespace CheckPDFTitle
       Settings.Default.WindowWidth = Width;
       Settings.Default.WindowLeft = Left;
       Settings.Default.WindowTop = Top;
-      Settings.Default.SeparatedCaracter = textBoxSeparatedCaracter.Text[0];
+      Settings.Default.Separatedcharacter = textBoxSeparatedcharacter.Text[0];
       Settings.Default.IncludeSubDirectories = checkBoxIncludeSubDirectories.Checked;
       Settings.Default.PdfPath = textBoxPDFPath.Text;
       Settings.Default.Save();

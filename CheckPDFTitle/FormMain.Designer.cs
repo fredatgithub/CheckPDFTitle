@@ -60,8 +60,8 @@
       this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.aideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.àproposdeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-      this.labelSeparatedCaracter = new System.Windows.Forms.Label();
-      this.textBoxSeparatedCaracter = new System.Windows.Forms.TextBox();
+      this.labelSeparatedcharacter = new System.Windows.Forms.Label();
+      this.textBoxSeparatedcharacter = new System.Windows.Forms.TextBox();
       this.checkBoxIncludeSubDirectories = new System.Windows.Forms.CheckBox();
       this.menuStrip1.SuspendLayout();
       this.SuspendLayout();
@@ -322,22 +322,22 @@
       this.àproposdeToolStripMenuItem.Text = "À &propos de...";
       this.àproposdeToolStripMenuItem.Click += new System.EventHandler(this.aproposdeToolStripMenuItem_Click);
       // 
-      // labelSeparatedCaracter
+      // labelSeparatedcharacter
       // 
-      this.labelSeparatedCaracter.AutoSize = true;
-      this.labelSeparatedCaracter.Location = new System.Drawing.Point(12, 80);
-      this.labelSeparatedCaracter.Name = "labelSeparatedCaracter";
-      this.labelSeparatedCaracter.Size = new System.Drawing.Size(134, 17);
-      this.labelSeparatedCaracter.TabIndex = 24;
-      this.labelSeparatedCaracter.Text = "Separated caracter:";
+      this.labelSeparatedcharacter.AutoSize = true;
+      this.labelSeparatedcharacter.Location = new System.Drawing.Point(12, 80);
+      this.labelSeparatedcharacter.Name = "labelSeparatedcharacter";
+      this.labelSeparatedcharacter.Size = new System.Drawing.Size(142, 17);
+      this.labelSeparatedcharacter.TabIndex = 24;
+      this.labelSeparatedcharacter.Text = "Separated character:";
       // 
-      // textBoxSeparatedCaracter
+      // textBoxSeparatedcharacter
       // 
-      this.textBoxSeparatedCaracter.Location = new System.Drawing.Point(153, 80);
-      this.textBoxSeparatedCaracter.Name = "textBoxSeparatedCaracter";
-      this.textBoxSeparatedCaracter.Size = new System.Drawing.Size(48, 22);
-      this.textBoxSeparatedCaracter.TabIndex = 23;
-      this.textBoxSeparatedCaracter.Text = "_";
+      this.textBoxSeparatedcharacter.Location = new System.Drawing.Point(153, 80);
+      this.textBoxSeparatedcharacter.Name = "textBoxSeparatedcharacter";
+      this.textBoxSeparatedcharacter.Size = new System.Drawing.Size(48, 22);
+      this.textBoxSeparatedcharacter.TabIndex = 23;
+      this.textBoxSeparatedcharacter.Text = "_";
       // 
       // checkBoxIncludeSubDirectories
       // 
@@ -355,8 +355,8 @@
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1502, 600);
       this.Controls.Add(this.checkBoxIncludeSubDirectories);
-      this.Controls.Add(this.labelSeparatedCaracter);
-      this.Controls.Add(this.textBoxSeparatedCaracter);
+      this.Controls.Add(this.labelSeparatedcharacter);
+      this.Controls.Add(this.textBoxSeparatedcharacter);
       this.Controls.Add(this.labelSelectedFile);
       this.Controls.Add(this.labeltimeSpent);
       this.Controls.Add(this.labelCurrentFile2);
@@ -423,8 +423,8 @@
     private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
     private System.Windows.Forms.ToolStripMenuItem aideToolStripMenuItem;
     private System.Windows.Forms.ToolStripMenuItem àproposdeToolStripMenuItem;
-    private System.Windows.Forms.Label labelSeparatedCaracter;
-    private System.Windows.Forms.TextBox textBoxSeparatedCaracter;
+    private System.Windows.Forms.Label labelSeparatedcharacter;
+    private System.Windows.Forms.TextBox textBoxSeparatedcharacter;
     private System.Windows.Forms.CheckBox checkBoxIncludeSubDirectories;
   }
 }

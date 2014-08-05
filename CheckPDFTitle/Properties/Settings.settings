@@ -2,7 +2,7 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CheckPDFTitle.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="SeparatedCaracter" Type="System.Char" Scope="User">
+    <Setting Name="Separatedcharacter" Type="System.Char" Scope="User">
       <Value Profile="(Default)">_</Value>
     </Setting>
     <Setting Name="IncludeSubDirectories" Type="System.Boolean" Scope="User">
