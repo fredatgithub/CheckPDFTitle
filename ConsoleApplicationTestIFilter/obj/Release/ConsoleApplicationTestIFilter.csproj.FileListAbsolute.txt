@@ -1,5 +1,0 @@
-D:\utilisateurs\fjuhel\documents\visual studio 2012\Projects\CheckPDFTitle\ConsoleApplicationTestIFilter\bin\Release\ConsoleApplicationTestIFilter.exe
-D:\utilisateurs\fjuhel\documents\visual studio 2012\Projects\CheckPDFTitle\ConsoleApplicationTestIFilter\bin\Release\ConsoleApplicationTestIFilter.pdb
-D:\utilisateurs\fjuhel\documents\visual studio 2012\Projects\CheckPDFTitle\ConsoleApplicationTestIFilter\obj\Release\ConsoleApplicationTestIFilter.csprojResolveAssemblyReference.cache
-D:\utilisateurs\fjuhel\documents\visual studio 2012\Projects\CheckPDFTitle\ConsoleApplicationTestIFilter\obj\Release\ConsoleApplicationTestIFilter.exe
-D:\utilisateurs\fjuhel\documents\visual studio 2012\Projects\CheckPDFTitle\ConsoleApplicationTestIFilter\obj\Release\ConsoleApplicationTestIFilter.pdb
