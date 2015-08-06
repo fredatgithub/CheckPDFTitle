@@ -23,7 +23,7 @@ namespace CheckPDFTitle
     private void FormMain_Load(object sender, EventArgs e)
     {
 #if DEBUG
-      textBoxPDFPath.Text = @"D:\MesDoc\dev\doc\code project articles";
+      textBoxPDFPath.Text = @"C:\Users\User\Documents\_MSDN";
 #else
       textBoxPDFPath.Text = Directory.GetCurrentDirectory();
 #endif
@@ -221,7 +221,7 @@ namespace CheckPDFTitle
 
     private void aproposdeToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      AboutBox1 ab = new AboutBox1();
+      AboutBoxApplication ab = new AboutBoxApplication();
       ab.Show();
     }
 

@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace CheckPDFTitle
 {
-  partial class AboutBox1 : Form
+  partial class AboutBoxApplication : Form
   {
-    public AboutBox1()
+    public AboutBoxApplication()
     {
       InitializeComponent();
       Text = String.Format("À propos de {0}", AssemblyTitle);
