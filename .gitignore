@@ -28,7 +28,7 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
-
+DLL/
 <<<<<<< HEAD
 =======
 # Roslyn cache directories
