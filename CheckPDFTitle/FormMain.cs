@@ -70,7 +70,7 @@ namespace CheckPDFTitle
       SearchOption searchOption = checkBoxIncludeSubDirectories.Checked ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly;
       // check rights to reach directory
       FileInfo[] files = di.GetFiles(searchPattern, searchOption);
-      
+
       foreach (FileInfo file in files)
       {
         listBoxListOfFiles.Items.Add(file.Name);
@@ -148,10 +148,10 @@ namespace CheckPDFTitle
 
     private static void DisplayTotalNumber(Control myLabel, ListBox myListBox)
     {
-      myLabel.Text = string.Format("Number: {0}", myListBox.Items.Count);
+      myLabel.Text = $"Number: {myListBox.Items.Count}";
     }
 
-    private string ExtractTextFromPdf(string path)
+    private static string ExtractTextFromPdf(string path)
     {
       return FilterWrapper.DefaultParser.Extract(path);
     }
@@ -229,7 +229,7 @@ namespace CheckPDFTitle
     {
       Assembly assembly = Assembly.GetExecutingAssembly();
       FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-      Text += string.Format(" V{0}.{1}.{2}.{3}", fvi.FileMajorPart, fvi.FileMinorPart, fvi.FileBuildPart, fvi.FilePrivatePart);
+      Text += $" V{fvi.FileMajorPart}.{fvi.FileMinorPart}.{fvi.FileBuildPart}.{fvi.FilePrivatePart}";
     }
 
     private void FormMain_FormClosing(object sender, FormClosingEventArgs e)

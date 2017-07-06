@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace CheckPDFTitle
 {
-  static class Program
+  internal static class Program
   {
     /// <summary>
     /// Point d'entrée principal de l'application.
