@@ -1,12 +1,12 @@
-﻿using System;
+﻿using CheckPDFTitle.Properties;
+using org.apache.pdfbox.pdmodel;
+using org.apache.pdfbox.util;
+using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
-using org.apache.pdfbox.pdmodel;
-using org.apache.pdfbox.util;
-using CheckPDFTitle.Properties;
 
 namespace CheckPDFTitle
 {
@@ -17,7 +17,7 @@ namespace CheckPDFTitle
       InitializeComponent();
     }
 
-    TimeSpan _tempsPasse;
+    private TimeSpan _tempsPasse;
     private string _separatedcharacter = "-";
 
     private void FormMain_Load(object sender, EventArgs e)
@@ -148,7 +148,8 @@ namespace CheckPDFTitle
 
     private static void DisplayTotalNumber(Control myLabel, ListBox myListBox)
     {
-      myLabel.Text = $"Number: {myListBox.Items.Count}";
+      //myLabel.Text = $"Number: {myListBox.Items.Count}";
+      myLabel.Text = string.Format("Number: {0}", myListBox.Items.Count);
     }
 
     private static string ExtractTextFromPdf(string path)
@@ -207,7 +208,7 @@ namespace CheckPDFTitle
       // open explorer to my documents
     }
 
-    private void SaveListBox(string name, ListBox myListBox)
+    private static void SaveListBox(string name, ListBox myListBox)
     {
       string myDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\";
       using (StreamWriter sw = new StreamWriter(myDocuments + name))
@@ -229,7 +230,8 @@ namespace CheckPDFTitle
     {
       Assembly assembly = Assembly.GetExecutingAssembly();
       FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-      Text += $" V{fvi.FileMajorPart}.{fvi.FileMinorPart}.{fvi.FileBuildPart}.{fvi.FilePrivatePart}";
+      //Text += $" V{fvi.FileMajorPart}.{fvi.FileMinorPart}.{fvi.FileBuildPart}.{fvi.FilePrivatePart}";
+      Text += string.Format(" V{0}.{1}.{2}.{3}", fvi.FileMajorPart, fvi.FileMinorPart, fvi.FileBuildPart, fvi.FilePrivatePart);
     }
 
     private void FormMain_FormClosing(object sender, FormClosingEventArgs e)

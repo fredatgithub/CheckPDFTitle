@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace CheckPDFTitle
 {
-  partial class AboutBoxApplication : Form
+  internal partial class AboutBoxApplication : Form
   {
     public AboutBoxApplication()
     {
